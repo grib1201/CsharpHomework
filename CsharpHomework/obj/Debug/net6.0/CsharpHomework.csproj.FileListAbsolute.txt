@@ -1,0 +1,15 @@
+C:\Users\MariaGriboedova\Studies\Repos\CsharpHomework\CsharpHomework\bin\Debug\net6.0\CsharpHomework.exe
+C:\Users\MariaGriboedova\Studies\Repos\CsharpHomework\CsharpHomework\bin\Debug\net6.0\CsharpHomework.deps.json
+C:\Users\MariaGriboedova\Studies\Repos\CsharpHomework\CsharpHomework\bin\Debug\net6.0\CsharpHomework.runtimeconfig.json
+C:\Users\MariaGriboedova\Studies\Repos\CsharpHomework\CsharpHomework\bin\Debug\net6.0\CsharpHomework.dll
+C:\Users\MariaGriboedova\Studies\Repos\CsharpHomework\CsharpHomework\bin\Debug\net6.0\CsharpHomework.pdb
+C:\Users\MariaGriboedova\Studies\Repos\CsharpHomework\CsharpHomework\obj\Debug\net6.0\CsharpHomework.csproj.AssemblyReference.cache
+C:\Users\MariaGriboedova\Studies\Repos\CsharpHomework\CsharpHomework\obj\Debug\net6.0\CsharpHomework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MariaGriboedova\Studies\Repos\CsharpHomework\CsharpHomework\obj\Debug\net6.0\CsharpHomework.AssemblyInfoInputs.cache
+C:\Users\MariaGriboedova\Studies\Repos\CsharpHomework\CsharpHomework\obj\Debug\net6.0\CsharpHomework.AssemblyInfo.cs
+C:\Users\MariaGriboedova\Studies\Repos\CsharpHomework\CsharpHomework\obj\Debug\net6.0\CsharpHomework.csproj.CoreCompileInputs.cache
+C:\Users\MariaGriboedova\Studies\Repos\CsharpHomework\CsharpHomework\obj\Debug\net6.0\CsharpHomework.dll
+C:\Users\MariaGriboedova\Studies\Repos\CsharpHomework\CsharpHomework\obj\Debug\net6.0\refint\CsharpHomework.dll
+C:\Users\MariaGriboedova\Studies\Repos\CsharpHomework\CsharpHomework\obj\Debug\net6.0\CsharpHomework.pdb
+C:\Users\MariaGriboedova\Studies\Repos\CsharpHomework\CsharpHomework\obj\Debug\net6.0\CsharpHomework.genruntimeconfig.cache
+C:\Users\MariaGriboedova\Studies\Repos\CsharpHomework\CsharpHomework\obj\Debug\net6.0\ref\CsharpHomework.dll
