@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CsharpHomework
 {
-    internal class Point
+    class Point
     {
         public Point()
         {
