@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace CsharpHomework
 {
-    abstract class Shape
+    abstract class Shape: IComparable<Shape>
     {
-        public List<Point> PointsList { get; }
-        public abstract double CountArea();
-        public Shape(List<Point> points)
+        public int CompareTo(Shape? other)
         {
-            PointsList = points;
+            throw new NotImplementedException();
         }
+
+        public abstract double CountArea();
 
     }
 }

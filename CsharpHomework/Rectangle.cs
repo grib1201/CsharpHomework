@@ -8,17 +8,18 @@ namespace CsharpHomework
 {
     class Rectangle : Shape
     {
-        public Rectangle(List<Point> points) : base(points)
+        public Rectangle(Point p1, Point p2) : base()
         {
+            this.p1 = p1;
+            this.p2 = p2;
         }
+
+        private Point p1;
+        private Point p2;
 
         public override double CountArea()
         {
-            var result = (PointsList[0].x - PointsList[1].x)*(PointsList[0].y + PointsList[1].y) 
-                + (PointsList[1].x - PointsList[2].x)*(PointsList[1].y + PointsList[2].y) 
-                + (PointsList[2].x - PointsList[3].x)*(PointsList[2].y + PointsList[3].y) 
-                + (PointsList[3].x - PointsList[0].x)*(PointsList[3].y + PointsList[0].y)
-                / 2;
+            int result = (p2.x - p1.x) * (p2.y + p1.y);
             return result;
         }
     }

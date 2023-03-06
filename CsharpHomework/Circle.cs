@@ -10,9 +10,12 @@ namespace CsharpHomework
     {
         public double Radius { get; set; }
 
-        public Circle(List<Point> points) : base(points)
+        public Circle(Point p1) : base()
         {
+            this.p1 = p1;   
         }
+
+        private Point p1;
 
         public override double CountArea()
         {

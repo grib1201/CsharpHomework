@@ -8,10 +8,6 @@ namespace CsharpHomework
 {
     class Point
     {
-        public Point()
-        {
-
-        }
         public Point(int x, int y)
         {
             this.x = x;
@@ -23,10 +19,7 @@ namespace CsharpHomework
 
         public Point Add(Point p1)
         {
-            Point point = new Point();
-            point.x = x + p1.x;
-            point.y = y + p1.y;
-            return point;
+            return new Point(x + p1.x, y + p1.y);
         }
     }
 
