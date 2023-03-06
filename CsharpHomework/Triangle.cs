@@ -14,7 +14,7 @@ namespace CsharpHomework
 
         public override double CountArea()
         {
-            var result = (1 / 2) * (PointsList[0].x * (PointsList[1].y - PointsList[2].y) 
+            var result = (1 / 2) * (p1.x * (p2.y - p3.y) 
                      + PointsList[1].x * (PointsList[2].y - PointsList[0].y)
                      + PointsList[2].x * (PointsList[0].y - PointsList[1].y));
             return result;
