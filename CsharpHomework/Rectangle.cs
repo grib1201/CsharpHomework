@@ -8,7 +8,8 @@ namespace CsharpHomework
 {
     class Rectangle : Shape
     {
-        public Rectangle(Point p1, Point p2) : base()
+        public override string ClassName { get => "Rectangle"; }
+        public Rectangle(Point p1, Point p2, Color color, Contour contour) : base(color, contour)
         {
             this.p1 = p1;
             this.p2 = p2;

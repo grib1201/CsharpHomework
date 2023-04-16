@@ -8,11 +8,11 @@ namespace CsharpHomework
 {
     public class Contour
     {
-        private string _contourValue;
+        public string contourValue { get; set; }
 
-        public Contour(string _contourValue)
+        public Contour(string contourValue)
         {
-            this._contourValue = _contourValue;
+            this.contourValue = contourValue;
         }
     }
 }

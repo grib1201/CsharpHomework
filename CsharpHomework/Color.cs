@@ -8,11 +8,11 @@ namespace CsharpHomework
 {
     public class Color
     {
-        private string _colorValue;
+        public string colorValue { get; set; }
 
         public Color(string colorValue)
         {
-            this._colorValue = colorValue;
+            this.colorValue = colorValue;
         }
     }
 }

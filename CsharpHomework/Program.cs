@@ -1,5 +1,4 @@
 ﻿using CsharpHomework;
-using System.Collections;
 
 class Program
 {
@@ -10,45 +9,54 @@ class Program
         List<Shape> shapesListNumber2 = new List<Shape>();
 
         // Circles
-        var Circle1 = new Circle(new Point(5, 5));
-        Circle1.Radius = 10;
+        var CircleBlueSolid = new Circle(new Point(5, 5), new Color("blue"), new Contour("solid"));
+        CircleBlueSolid.Radius = 10;
 
-        var Circle2 = new Circle(new Point(1, 2));
-        Circle2.Radius = 4;
+        var CircleRedSolid = new Circle(new Point(1, 2), new Color("red"), new Contour("solid"));
+        CircleRedSolid.Radius = 4;
 
-        var Circle3 = new Circle(new Point(-1, -4));
-        Circle3.Radius = 5;
+        var CircleYellowDashed = new Circle(new Point(-1, -4), new Color("yellow"), new Contour("dashed"));
+        CircleYellowDashed.Radius = 5;
 
         //Triangles
-        var Triangle1 = new Triangle(new Point(0, 1), new Point(2, 5), new Point(5, 4));
-        var Triangle2 = new Triangle(new Point(0, -1), new Point(3, 5), new Point(4, 7));
-        var Triangle3 = new Triangle(new Point(2, 3), new Point(3, 4), new Point(4, 5));
+        var TriangleYellowDashed = new Triangle(new Point(0, 1), new Point(2, 5), new Point(5, 4), new Color("yellow"), new Contour("dashed"));
+        var TriangleWhiteDashDotted = new Triangle(new Point(0, -1), new Point(3, 5), new Point(4, 7), new Color("white"), new Contour("dashDotted"));
+        var TriangleBlueDashDotted = new Triangle(new Point(2, 3), new Point(3, 4), new Point(4, 5), new Color("blue"), new Contour("dashDotted"));
 
         //Rectangles
-        var Rectangle1 = new Rectangle(new Point(0, 3), new Point(1, 4));
-        var Rectangle2 = new Rectangle(new Point(-2, -3), new Point(-1, -4));
-        var Rectangle3 = new Rectangle(new Point(2, 8), new Point(3, 8));
+        var RectangleWhiteSolid = new Rectangle(new Point(0, 3), new Point(1, 4), new Color("white"), new Contour("solid"));
+        var RectangleBlueSolid = new Rectangle(new Point(-2, -3), new Point(-1, -4), new Color("blue"), new Contour("solid"));
+        var RectangleRedDashDotted = new Rectangle(new Point(2, 8), new Point(3, 8), new Color("red"), new Contour("dashDotted"));
 
-        shapesListNumber1.Add(Circle1);
-        shapesListNumber1.Add(Circle2);
-        shapesListNumber1.Add(Triangle1);
-        shapesListNumber1.Add(Rectangle1);
-        shapesListNumber1.Add(Rectangle2);
+        shapesListNumber1.Add(CircleBlueSolid);
+        shapesListNumber1.Add(CircleRedSolid);
+        shapesListNumber1.Add(TriangleYellowDashed);
+        shapesListNumber1.Add(RectangleWhiteSolid);
+        shapesListNumber1.Add(RectangleBlueSolid);
 
-        shapesListNumber2.Add(Circle3);
-        shapesListNumber2.Add(Triangle2);
-        shapesListNumber2.Add(Triangle3);
-        shapesListNumber2.Add(Rectangle3);
+        shapesListNumber1.Add(CircleYellowDashed);
+        shapesListNumber1.Add(TriangleWhiteDashDotted);
+        shapesListNumber1.Add(TriangleBlueDashDotted);
+        shapesListNumber1.Add(RectangleRedDashDotted);
 
-        shapesListNumber1.Sort();
-        shapesListNumber2.Sort();
+        var allRedShapes = shapesListNumber1
+            .Where(x => x.color.colorValue.Equals("red")).ToList();
 
-        Console.WriteLine(String.Join(Environment.NewLine, shapesListNumber1));
-        Console.WriteLine(String.Join(Environment.NewLine, shapesListNumber2));
+        Console.WriteLine(String.Join(Environment.NewLine, allRedShapes));
 
+        var allSolidShapes = shapesListNumber1
+            .Where(x => x.contour.contourValue.Equals("solid")).ToList();
 
+        Console.WriteLine(String.Join(Environment.NewLine, allSolidShapes));
 
     }
+
+    //2
+    //shapesListNumber1.Sort();
+    //shapesListNumber2.Sort();
+
+    //Console.WriteLine(String.Join(Environment.NewLine, shapesListNumber1));
+    //Console.WriteLine(String.Join(Environment.NewLine, shapesListNumber2));
 
     //1
     // Point class exersizes
@@ -57,5 +65,5 @@ class Program
     //Point point3 = point.Add(point2);
 
     //Console.WriteLine($"Point: x={point3.x}, y={point3.y}");
-    
+
 }
